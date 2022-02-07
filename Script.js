@@ -1,3 +1,5 @@
+// Array que armazena as informações das musicas presentes na aplicação
+
 let musicas = [
     {
     titulo: 'Guitar Solo', 
@@ -33,6 +35,17 @@ let nomeArtista = document.querySelector('.descricao i')
 let anterior = document.querySelector('.anterior')
 let proxima = document.querySelector('.proxima')
 
+function renderizarMusica(index){
+    musica.setAttribute('src', musicas[index].src)
+    musica.addEventListener('loadeddata', ()=>{
+        nomeMusica.textContent = musicas[index].titulo
+        nomeArtista.textContent = musicas[index].artista
+        img.src = musicas[index].img
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration))
+    })
+
+}
+
 renderizarMusica(indexMusica)
 
 
@@ -46,7 +59,7 @@ function atualizarBarra(){
 }
 
 
-
+// Função que irá realizar a conversão e atualização dos valores de tempo no display
 function segundosParaMinutos (segundos){
     let campoMinutos = Math.floor(segundos / 60)
     let campoSegundos = segundos % 60
@@ -58,19 +71,21 @@ function segundosParaMinutos (segundos){
     return campoMinutos+ ':' + campoSegundos
 }
 
-
+// Função de play
 function trocarMusica(){
      musica.play()
      pause.style.display = 'block'
      play.style.display = 'none'
 }
 
+// Função de pause
 function pausarMusicar(){
     musica.pause()
     pause.style.display = 'none'
     play.style.display = 'block'
 }
 
+// Funções de voltar e avançar as musicas
 anterior.addEventListener('click', ()=>{
     indexMusica--
     if(indexMusica < 0){
@@ -86,19 +101,6 @@ proxima.addEventListener('click', ()=>{
     }
     renderizarMusica(indexMusica)
 })
-
-function renderizarMusica(index){
-    musica.setAttribute('src', musicas[index].src)
-    musica.addEventListener('loadeddata', ()=>{
-        nomeMusica.textContent = musicas[index].titulo
-        nomeArtista.textContent = musicas[index].artista
-        img.src = musicas[index].img
-        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration))
-    })
-
-}
-
-
 
 
 // Eventos da aplicação

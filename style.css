@@ -6,7 +6,7 @@ body, html{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #333333;
+    background-color: #b14343;
     color: white;
     font-family: MADE TOMMY;
 }
@@ -85,7 +85,7 @@ progress{
 }
 
 h5{
-    color: rgba(166, 255, 0, 0.713);
+    color: rgba(0, 0, 0, 0.713);
     margin-top: 25px;
     text-align: center;
     font-size: 15px;
