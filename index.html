@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Player de musica</title>
+</head>
+<body>
+        <img src="imgs/Rock.png" alt="Imagem de uma guitarra">
+
+        <div class="descricao">
+            <h2>Nome da música</h2>
+            <i>Leonardo Augusto</i>
+        </div>
+
+        <!-- Duração e barra de carregamento do player-->
+        <div class="duracao">
+            <div class="barra">
+                <progress value="0" max="1"></progress>
+
+            <div class="ponto"></div>
+            </div>
+
+            <div class="tempo">
+                <p class="inicio">0:00</p>
+                <p class="fim">3:12</p>
+            </div>
+
+        </div>
+
+        <div class="player">
+            <i class="fas fa-step-backward setas anterior"></i>
+            <i class="fas fa-play-circle botao-play"></i>
+            <i class="fas fa-pause-circle botao-pause"></i>
+            <i class="fas fa-step-forward setas proxima"></i>
+        </div>
+
+        <h5>Ao trocar de música pressione o botão de <br> pause novamente caso não começe...</h5>
+
+        <audio src="musicas/We Ride! - Reed Mathis.mp3"></audio>
+
+
+</body>
+</html>
+<script src="Script.js"></script>
