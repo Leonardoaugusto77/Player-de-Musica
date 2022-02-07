@@ -1,4 +1,4 @@
-# Player de Musica
+# Player de Musica 🎵
 <h5>Detalhes a se destacar no projeto</h5>
 
 <ul>
