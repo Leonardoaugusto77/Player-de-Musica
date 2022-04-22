@@ -6,4 +6,8 @@
      <li>Foi utilizado functions e arrow functions ➡️</li>
      <li>O Player tem as funções trocar de música, retroceder e avançar ▶️</li>
      <li>Esse código foi retirado de uma video aula, porém alguns dos trechos de códigos foram refeitos por mim 👩‍💻</li>
+  
+  <br>
+  
+  <img src="Screenshot_92.png" alt="Print do projeto">
 </ul>
